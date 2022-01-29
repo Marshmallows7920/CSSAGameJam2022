@@ -20,6 +20,7 @@ public class ObjectCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //insert what we want to do if they hit a wrong thing
         Debug.Log("IT FUCKING WORKED!!!!");
     }
 }
