@@ -51,9 +51,12 @@ TagManager:
   - name: ParkingSlot
     uniqueID: 1968509613
     locked: 0
+  - name: Car
+    uniqueID: 2401936685
+    locked: 0
   - name: Tree
     uniqueID: 3344198019
     locked: 0
-  - name: Car
-    uniqueID: 2401936685
+  - name: Wall
+    uniqueID: 427915463
     locked: 0
