@@ -9,7 +9,7 @@ public class ObjectCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bc = GetComponent<BoxCollider2D>(); 
+        bc = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -17,9 +17,9 @@ public class ObjectCollision : MonoBehaviour
     {
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         //insert what we want to do if they hit a wrong thing
-        Debug.Log("IT FUCKING WORKED!!!!");
+        Debug.Log("IT FUCKING WORKED!!!!");   
     }
 }
