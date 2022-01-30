@@ -9,11 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuScene1.unity
     guid: 31a1562e2c209804ba5369cce4e2b980
   - enabled: 1
-<<<<<<< Updated upstream
     path: Assets/Scenes/Level 3 (Guess the slot).unity
-=======
-    path: Assets/Scenes/Level 3.unity
->>>>>>> Stashed changes
     guid: b3e380667d6d3d24383db55e7d522f23
   - enabled: 0
     path: Assets/Scenes/Quit Screen.unity
