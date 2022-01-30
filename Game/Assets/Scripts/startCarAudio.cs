@@ -10,9 +10,6 @@ public class startCarAudio : MonoBehaviour
     private CarSteering carSteering;
     private AudioSource aud;
 
-    [SerializeField] float modifier;
-    [SerializeField] AudioClip ac;
-
 
     void Start()
     {
@@ -26,7 +23,7 @@ public class startCarAudio : MonoBehaviour
         float soundPitch = 1;
         float speed = carSteering.getSpeed();
 
-        soundPitch = 1 + (Mathf.Abs(speed) * .3f);
+        soundPitch = .5f + (Mathf.Abs(speed) * .3f);
         aud.pitch = soundPitch;
     }
 }
