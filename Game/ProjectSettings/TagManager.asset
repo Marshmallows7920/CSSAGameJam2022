@@ -51,6 +51,9 @@ TagManager:
   - name: ParkingSlot
     uniqueID: 1968509613
     locked: 0
+  - name: Test
+    uniqueID: 3700382327
+    locked: 0
   - name: Car
     uniqueID: 2401936685
     locked: 0
