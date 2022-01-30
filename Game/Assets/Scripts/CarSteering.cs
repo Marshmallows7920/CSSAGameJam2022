@@ -27,10 +27,18 @@ public class CarSteering : MonoBehaviour
     void FixedUpdate()
     {
         speed = Input.GetAxis("Vertical");
-        rb.velocity = RightVelocity() + ForwardVelocity() * driftFactor;
-        GetComponent<Rigidbody2D>().AddForce(transform.right * accelerationPower * speed);
-        //Debug.Log(speed);
-        rb.angularVelocity = (-Input.GetAxis("Horizontal") * steeringPower);
+        if (speed != 0) {
+            GetComponent<Rigidbody2D>().AddForce(transform.right * accelerationPower * speed);
+            //Debug.Log(speed);
+            rb.angularVelocity = (-Input.GetAxis("Horizontal") * steeringPower);
+            if (Mathf.Abs(rb.velocity.x) < 300)
+            {
+                rb.velocity = RightVelocity() + ForwardVelocity() * driftFactor;
+            }
+            else {
+                rb.velocity = RightVelocity();
+            }
+        }
     }
 
     //Velocity Left/right

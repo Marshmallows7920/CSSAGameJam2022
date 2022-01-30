@@ -16,11 +16,11 @@ TagManager:
   - Water
   - UI
   - Controls
+  - Car
   - 
   - 
   - 
-  - 
-  - 
+  - Background
   - 
   - 
   - 
@@ -53,4 +53,7 @@ TagManager:
     locked: 0
   - name: Tree
     uniqueID: 3344198019
+    locked: 0
+  - name: Car
+    uniqueID: 2401936685
     locked: 0
