@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MenuScene1.unity
     guid: 31a1562e2c209804ba5369cce4e2b980
   - enabled: 1
@@ -14,9 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 2 (Turning).unity
     guid: 7db02500b83be43498209df1409aad04
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Level 3 (Guess the slot).unity
     guid: b3e380667d6d3d24383db55e7d522f23
+  - enabled: 1
+    path: Assets/Scenes/Level 4 (Taylor Swift).unity
+    guid: 46e05d71af3068d4d87d519a435a2b1d
+  - enabled: 1
+    path: Assets/Scenes/Level 5 (Parallel parking).unity
+    guid: 5800d159e0dbc4ebfa4e2f8202d9feab
+  - enabled: 1
+    path: Assets/Scenes/Level 6 (Smiley face).unity
+    guid: f7fc065034c3193448557d9be3bdbf97
   - enabled: 0
     path: Assets/Scenes/Quit Screen.unity
     guid: 2cda990e2423bbf4892e6590ba056729
