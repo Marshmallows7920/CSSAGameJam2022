@@ -34,8 +34,8 @@ public class CarSteering : MonoBehaviour
                 speed *= reverseFactor;
             }
             GetComponent<Rigidbody2D>().AddForce(transform.right * accelerationPower * speed);
-            rb.angularVelocity = (-Input.GetAxis("Horizontal") * steeringPower);
             rb.velocity = RightVelocity() + ForwardVelocity() * driftFactor;
+            rb.angularVelocity = (-Input.GetAxis("Horizontal") * steeringPower * Mathf.Min(1, rb.velocity.magnitude / 10));
         }
     }
 
