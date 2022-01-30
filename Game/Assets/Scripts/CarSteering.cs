@@ -28,12 +28,9 @@ public class CarSteering : MonoBehaviour
     {
         speed = Input.GetAxis("Vertical");
         rb.velocity = RightVelocity() + ForwardVelocity() * driftFactor;
-        if (speed != 0)
-        {
-            GetComponent<Rigidbody2D>().AddForce(transform.right * accelerationPower * speed);
-            Debug.Log(speed);
-            rb.angularVelocity = (-Input.GetAxis("Horizontal") * steeringPower);
-        }
+        GetComponent<Rigidbody2D>().AddForce(transform.right * accelerationPower * speed);
+        //Debug.Log(speed);
+        rb.angularVelocity = (-Input.GetAxis("Horizontal") * steeringPower);
     }
 
     //Velocity Left/right
