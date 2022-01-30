@@ -15559,7 +15559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &880167183
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16394,7 +16394,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1572112816
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17202,6 +17202,7 @@ GameObject:
   - component: {fileID: 1962616801}
   - component: {fileID: 1962616800}
   - component: {fileID: 1962616799}
+  - component: {fileID: 1962616806}
   m_Layer: 0
   m_Name: Player Car
   m_TagString: Untagged
@@ -17221,6 +17222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 592daaf577611a34a88a4ad1fc111acb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  crashedPopout: {fileID: 1378742396}
 --- !u!114 &1962616800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17238,6 +17240,7 @@ MonoBehaviour:
   - Top Right Parking
   - Bottom Left Parking
   - Bottom Right Parking
+  dialogPopouts: {fileID: 1572112815}
 --- !u!50 &1962616801
 Rigidbody2D:
   serializedVersion: 4
@@ -17366,6 +17369,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1962616806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962616798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a48ca2c821e58740bc4680115562969, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2035475416
 GameObject:
   m_ObjectHideFlags: 0

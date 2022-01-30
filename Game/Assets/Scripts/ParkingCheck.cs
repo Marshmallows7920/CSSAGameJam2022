@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
+[RequireComponent(typeof(DialoguePopouts))]
 public class ParkingCheck : MonoBehaviour
 {
     HashSet<Collider2D> colls = new HashSet<Collider2D>();
@@ -10,6 +11,9 @@ public class ParkingCheck : MonoBehaviour
     string[] parkingTags = new string[] { "Top Left Parking", "Top Right Parking", "Bottom Left Parking", "Bottom Right Parking" };
     Rigidbody2D rb;
 
+    [SerializeField] GameObject dialogPopouts;
+
+    bool win = false;
 
 
     // Start is called before the first frame update
@@ -21,7 +25,7 @@ public class ParkingCheck : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (colls.Count == 4) {
+        if (colls.Count == 4 && !win) {
             success();
         }
     }
@@ -41,9 +45,10 @@ public class ParkingCheck : MonoBehaviour
 
     private void success() {
         if (rb.velocity.magnitude < .1)
-        Debug.Log("SUCESS!!!!!!");
+        {
+            Debug.Log("SUCESS!!!!!!");
+            win = true;
+            dialogPopouts.SetActive(true);
+        }
     }
-
-
-
 }

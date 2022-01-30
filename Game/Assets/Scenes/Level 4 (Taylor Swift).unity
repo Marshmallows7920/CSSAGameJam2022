@@ -903,6 +903,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 363112201246503296, guid: 791436ecc67b4344ca98fcbc5f534e15, type: 3}
+      propertyPath: crashedPopout
+      value: 
+      objectReference: {fileID: 285374466}
     - target: {fileID: 363112201246503297, guid: 791436ecc67b4344ca98fcbc5f534e15, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -947,6 +951,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 363112201246503302, guid: 791436ecc67b4344ca98fcbc5f534e15, type: 3}
+      propertyPath: dialogPopouts
+      value: 
+      objectReference: {fileID: 1778844000}
     - target: {fileID: 363112201246503303, guid: 791436ecc67b4344ca98fcbc5f534e15, type: 3}
       propertyPath: m_Name
       value: 'Player Car '
@@ -1632,7 +1640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &848674777
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17916,7 +17924,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1778844001
 RectTransform:
   m_ObjectHideFlags: 0
