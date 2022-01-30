@@ -6,10 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-<<<<<<< Updated upstream
     path: Assets/Scenes/Quit Screen.unity
-=======
     path: Assets/Scenes/Background.unity
->>>>>>> Stashed changes
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
