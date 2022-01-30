@@ -8,10 +8,10 @@ public class CarSteering : MonoBehaviour
     Rigidbody2D rb;  
 
     [SerializeField]
-    float accelerationPower = 5f;
+    float accelerationPower = 50f;
     
     [SerializeField]
-    float steeringPower = 1f/0.25f;
+    float steeringPower = 50f;
 
     [SerializeField]
     float driftFactor = .9f;
@@ -27,11 +27,12 @@ public class CarSteering : MonoBehaviour
     void FixedUpdate()
     {
         speed = Input.GetAxis("Vertical");
+        rb.velocity = RightVelocity() + ForwardVelocity() * driftFactor;
         if (speed != 0)
         {
-            GetComponent<Rigidbody2D>().AddForce(transform.right * accelerationPower * (speed / Mathf.Abs(speed)));
+            GetComponent<Rigidbody2D>().AddForce(transform.right * accelerationPower * speed);
+            Debug.Log(speed);
             rb.angularVelocity = (-Input.GetAxis("Horizontal") * steeringPower);
-            rb.velocity = RightVelocity() + ForwardVelocity() * driftFactor;
         }
     }
 
